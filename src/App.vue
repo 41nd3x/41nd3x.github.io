@@ -1,7 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/layout/HeaderComponent.vue';
+import HeroSection from './components/content/HeroSection.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <HeaderComponent />
+  <main>
+    <HeroSection />
+  </main>
 </template>

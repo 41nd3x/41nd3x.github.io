@@ -1,1 +1,40 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-custom-primary: #00F0FF;
+    --color-custom-secondary: #BA2BE2;
+    --color-custom-tertiary: #FF00FF;
+    --color-custom-neutral: #0D1515;
+    --color-custom-accent: #192121;
+
+    --color-custom-text: #B4C5C6;
+
+    --font-hanken: 'Hanken Grotesk', sans-serif;
+}
+
+html, body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--color-custom-neutral);
+    color: var(--color-custom-text);
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('HankenGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('HankenGrotesk-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
