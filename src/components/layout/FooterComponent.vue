@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+const { el } = useScrollReveal(0.05)
+</script>
 
 <template>
-  <footer class="border-t border-gray-500/20 py-8 px-4 sm:px-6 bg-custom-neutral font-mono text-xs">
+  <footer ref="el" class="border-t border-gray-500/20 py-8 px-4 sm:px-6 bg-custom-neutral font-mono text-xs">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
       <div>
         <span class="text-base font-extrabold text-white">41<span class="text-custom-primary">ND3X</span></span>

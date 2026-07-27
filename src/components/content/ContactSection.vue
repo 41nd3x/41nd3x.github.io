@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+const { el } = useScrollReveal()
 
 const DISCORD_WEBHOOK_URL =
   'https://discord.com/api/webhooks/1530985949952217148/GUPlSQ2GAPiLVloLt_7G-2uOh1QSTxEYZCpPuRbRcomo-p65iCF3Iu-Vd97UCM2Wdh9z'
@@ -65,9 +68,9 @@ async function handleSubmit(e) {
 </script>
 
 <template>
-  <section id="contact" class="py-16 sm:py-24 border-b-2 border-gray-500/30">
+  <section ref="el" id="contact" class="py-16 sm:py-24 border-b-2 border-gray-500/30">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="bg-custom-accent border border-custom-primary/30 rounded-xl p-6 sm:p-10 neon-border">
+      <div class="reveal-item bg-custom-accent border border-custom-primary/30 rounded-xl p-6 sm:p-10 neon-border">
         <div class="space-y-3 mb-8">
           <p class="font-mono text-custom-primary text-sm tracking-widest uppercase">// Conectar con el equipo dev</p>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Despliega 41ND3X en tu negocio</h2>

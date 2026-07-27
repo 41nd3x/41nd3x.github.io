@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+const { el } = useScrollReveal()
+</script>
 
 <template>
-    <section id="about" class="scroll-mt-20 py-16 sm:py-24 px-4 sm:px-6 border-b-2 border-gray-500/30 bg-custom-accent/30">
+    <section ref="el" id="about" class="scroll-mt-20 py-16 sm:py-24 px-4 sm:px-6 border-b-2 border-gray-500/30 bg-custom-accent/30">
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div class="space-y-4">
@@ -12,11 +16,11 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 font-mono text-center">
-                    <div class="p-5 sm:p-6 border border-white/10 bg-custom-neutral rounded">
+                    <div class="reveal-item reveal-delay-1 p-5 sm:p-6 border border-white/10 bg-custom-neutral rounded">
                         <p class="text-3xl sm:text-4xl font-extrabold text-custom-primary mb-1 neon-primary">04</p>
                         <p class="text-[10px] sm:text-xs text-white/60">DESARROLLADORES HUMAN-CORE</p>
                     </div>
-                    <div class="p-5 sm:p-6 border border-white/10 bg-custom-neutral rounded">
+                    <div class="reveal-item reveal-delay-2 p-5 sm:p-6 border border-white/10 bg-custom-neutral rounded">
                         <p class="text-3xl sm:text-4xl font-extrabold text-custom-secondary mb-1 neon-secondary">01</p>
                         <p class="text-[10px] sm:text-xs text-white/60">AGENTE INTEGRADO EN TU PYME</p>
                     </div>

@@ -17,7 +17,7 @@ function closeMenu() {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
         <img src="@/assets/logo_41nd3x.webp" alt="41ND3X" class="h-8" />
-        <span class="hidden sm:inline-block text-[10px] font-mono px-2 py-0.5 border border-custom-secondary text-custom-secondary rounded-sm">
+        <span class="hidden sm:inline-block text-[10px] font-mono px-2 py-0.5 border border-custom-secondary text-custom-secondary rounded-sm before:inline-block before:w-1.5 before:h-1.5 before:bg-custom-secondary before:rounded-full before:animate-pulse before:mr-1.5 before:align-middle">
           SYS_ONLINE
         </span>
       </a>

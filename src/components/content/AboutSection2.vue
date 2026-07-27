@@ -1,4 +1,8 @@
 <script setup>
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+const { el } = useScrollReveal()
+
 const pilars = [
   {
     number: '01',
@@ -25,12 +29,12 @@ const pilars = [
 </script>
 
 <template>
-  <section id="pilars" class="py-16 sm:py-24 border-b-2 border-gray-500/30">
+  <section ref="el" id="pilars" class="py-16 sm:py-24 border-b-2 border-gray-500/30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <p class="font-mono text-custom-primary text-sm tracking-widest uppercase">// Arquitectura de producto</p>
-        <h2 class="text-2xl sm:text-4xl font-bold text-white">¿Por qué el "3" en 41ND3X?</h2>
-        <p class="text-custom-text/70">
+        <p class="reveal-item reveal-delay-1 font-mono text-custom-primary text-sm tracking-widest uppercase">// Arquitectura de producto</p>
+        <h2 class="reveal-item reveal-delay-2 text-2xl sm:text-4xl font-bold text-white">¿Por qué el "3" en 41ND3X?</h2>
+        <p class="reveal-item reveal-delay-3 text-custom-text/70">
           Un enfoque en tres capas diseñado específicamente para salvar la falta de tiempo de las PYMEs.
         </p>
       </div>
@@ -39,12 +43,12 @@ const pilars = [
         <div
           v-for="(pilar, i) in pilars"
           :key="i"
-          class="group p-6 sm:p-8 border border-gray-500/20 bg-custom-accent rounded-lg space-y-4 transition-all duration-300"
-          :class="{
+          class="reveal-item group p-6 sm:p-8 border border-gray-500/20 bg-custom-accent rounded-lg space-y-4 transition-all duration-300"
+          :class="[`reveal-delay-${i + 1}`, {
             'hover:border-custom-primary/50': pilar.color === 'primary',
             'hover:border-custom-secondary/50': pilar.color === 'secondary',
             'hover:border-custom-tertiary/50': pilar.color === 'tertiary',
-          }"
+          }]"
         >
           <div
             class="font-mono text-4xl font-extrabold opacity-50 group-hover:opacity-100 transition-opacity"
