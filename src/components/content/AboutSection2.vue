@@ -25,11 +25,11 @@ const pilars = [
 </script>
 
 <template>
-  <section class="py-24 border-b-2 border-gray-500/30">
+  <section class="py-16 sm:py-24 border-b-2 border-gray-500/30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
         <p class="font-mono text-custom-primary text-sm tracking-widest uppercase">// Arquitectura de producto</p>
-        <h2 class="text-4xl font-bold text-white">¿Por qué el "3" en 41ND3X?</h2>
+        <h2 class="text-2xl sm:text-4xl font-bold text-white">¿Por qué el "3" en 41ND3X?</h2>
         <p class="text-custom-text/70">
           Un enfoque en tres capas diseñado específicamente para salvar la falta de tiempo de las PYMEs.
         </p>
@@ -39,11 +39,11 @@ const pilars = [
         <div
           v-for="(pilar, i) in pilars"
           :key="i"
-          class="group p-8 border border-gray-500/20 bg-custom-accent rounded-lg space-y-4 transition-all duration-300"
+          class="group p-6 sm:p-8 border border-gray-500/20 bg-custom-accent rounded-lg space-y-4 transition-all duration-300"
           :class="{
-            'neon-primary': pilar.color === 'primary',
-            'neon-secondary': pilar.color === 'secondary',
-            'neon-tertiary': pilar.color === 'tertiary',
+            'hover:border-custom-primary/50': pilar.color === 'primary',
+            'hover:border-custom-secondary/50': pilar.color === 'secondary',
+            'hover:border-custom-tertiary/50': pilar.color === 'tertiary',
           }"
         >
           <div
@@ -56,8 +56,8 @@ const pilars = [
           >
             {{ pilar.number }}
           </div>
-          <h3 class="text-xl font-bold text-white text-shadow-none">{{ pilar.title }}</h3>
-          <p class="text-sm text-custom-text/80 leading-relaxed text-shadow-none">{{ pilar.description }}</p>
+          <h3 class="text-lg sm:text-xl font-bold text-white">{{ pilar.title }}</h3>
+          <p class="text-sm text-custom-text/80 leading-relaxed">{{ pilar.description }}</p>
         </div>
       </div>
     </div>

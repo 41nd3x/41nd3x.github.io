@@ -65,18 +65,18 @@ async function handleSubmit(e) {
 </script>
 
 <template>
-  <section class="py-24 border-b-2 border-gray-500/30">
+  <section class="py-16 sm:py-24 border-b-2 border-gray-500/30">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="bg-custom-accent border border-custom-primary/30 rounded-xl p-10 neon-border">
+      <div class="bg-custom-accent border border-custom-primary/30 rounded-xl p-6 sm:p-10 neon-border">
         <div class="space-y-3 mb-8">
           <p class="font-mono text-custom-primary text-sm tracking-widest uppercase">// Conectar con el equipo dev</p>
-          <h2 class="text-3xl font-extrabold text-white">Despliega 41ND3X en tu negocio</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Despliega 41ND3X en tu negocio</h2>
           <p class="text-sm text-custom-text/70">
             Cuéntanos brevemente cómo funciona tu PYME y te prepararemos una demo adaptada a tu lógica de trabajo.
           </p>
         </div>
 
-        <form @submit="handleSubmit" class="space-y-6 font-mono text-sm">
+        <form @submit="handleSubmit" class="space-y-6 font-mono text-xs sm:text-sm">
           <div class="grid sm:grid-cols-2 gap-6">
             <div>
               <label class="block text-white/80 mb-2">&gt; Nombre / Empresa</label>

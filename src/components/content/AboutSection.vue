@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <section id="about" class="scroll-mt-20 py-24 px-4 sm:px-6 border-b-2 border-gray-500/30 bg-custom-accent/30">
+    <section id="about" class="scroll-mt-20 py-16 sm:py-24 px-4 sm:px-6 border-b-2 border-gray-500/30 bg-custom-accent/30">
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div class="space-y-4">
