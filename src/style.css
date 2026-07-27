@@ -12,12 +12,6 @@
     --font-hanken: 'Hanken Grotesk', sans-serif;
 }
 
-html, body {
-    font-family: 'Hanken Grotesk', sans-serif;
-    background-color: var(--color-custom-neutral);
-    color: var(--color-custom-text);
-}
-
 @font-face {
     font-family: 'Hanken Grotesk';
     src: url('HankenGrotesk-Regular.ttf') format('truetype');
@@ -37,4 +31,33 @@ html, body {
     src: url('HankenGrotesk-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+}
+
+/* ESTILOS GLOBALES */
+html, body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--color-custom-neutral);
+    color: var(--color-custom-text);
+}
+
+body {
+    background-image:
+        linear-gradient(to right, rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ESTILOS NEON */
+.neon-primary {
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+.neon-secondary {
+    text-shadow: 0 0 10px rgba(186, 43, 226, 0.5);
+}
+.neon-tertiary {
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
