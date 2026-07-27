@@ -23,6 +23,7 @@ function closeMenu() {
       </a>
 
       <div class="hidden md:flex gap-8 font-mono text-xs tracking-wider">
+        <a href="#home" class="hover:text-custom-primary transition-colors">// INICIO</a>
         <a href="#about" class="hover:text-custom-primary transition-colors">// ORIGEN</a>
         <a href="#pilars" class="hover:text-custom-primary transition-colors">// ARQUITECTURA [3]</a>
         <a href="#contact" class="hover:text-custom-primary transition-colors">// CONTACTO</a>

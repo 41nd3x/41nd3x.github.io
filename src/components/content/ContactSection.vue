@@ -65,7 +65,7 @@ async function handleSubmit(e) {
 </script>
 
 <template>
-  <section class="py-16 sm:py-24 border-b-2 border-gray-500/30">
+  <section id="contact" class="py-16 sm:py-24 border-b-2 border-gray-500/30">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <div class="bg-custom-accent border border-custom-primary/30 rounded-xl p-6 sm:p-10 neon-border">
         <div class="space-y-3 mb-8">

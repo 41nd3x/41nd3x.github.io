@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section id="hero" class="min-h-[calc(100vh-4rem)] flex items-center pt-24 pb-12 px-4 sm:px-6 max-w-7xl mx-auto border-b-2 border-gray-500/30">
+  <section id="home" class="min-h-[calc(100vh-4rem)] flex items-center pt-24 pb-12 px-4 sm:px-6 max-w-7xl mx-auto border-b-2 border-gray-500/30">
     <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-center w-full">
       <div class="md:col-span-7 space-y-6">
         <p class="font-mono text-custom-primary text-xs sm:text-sm tracking-widest flex items-center gap-2">
